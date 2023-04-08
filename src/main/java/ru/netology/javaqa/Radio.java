@@ -61,11 +61,8 @@ public class Radio {
     }
 
     public void prevStation() {
-
-        if (currentStation > 1) {
-            currentStation -= 1;
-        }
-        if (currentStation == 1) {
+        currentStation -= 1;
+        if (currentStation < 1) {
             setCurrentStation(9);
         }
     }

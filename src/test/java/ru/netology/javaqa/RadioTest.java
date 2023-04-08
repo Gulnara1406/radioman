@@ -123,10 +123,10 @@ public class RadioTest {
     public void shouldChangeToPrevStation() {
         Radio radio = new Radio();
 
-        radio.setCurrentStation(5);
+        radio.setCurrentStation(2);
         radio.prevStation();
 
-        int expected = 4;
+        int expected = 1;
         int actual = radio.getCurrentStation();
 
         Assertions.assertEquals(expected, actual);
