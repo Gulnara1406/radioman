@@ -1,21 +1,22 @@
 package ru.netology.javaqa;
+
 public class Radio {
     private int currentVolume;
-    private int currentStation=1;
+    private int currentStation = 1;
 
-    public int getCurrentVolume(){
+    public int getCurrentVolume() {
         return currentVolume;
     }
 
-    public int getCurrentStation(){
+    public int getCurrentStation() {
         return currentStation;
     }
 
-    public void setCurrentVolume(int newCurrentVolume){
-        if (newCurrentVolume < 0){
+    public void setCurrentVolume(int newCurrentVolume) {
+        if (newCurrentVolume < 0) {
             return;
         }
-        if (newCurrentVolume > 10){
+        if (newCurrentVolume > 10) {
             return;
         }
         currentVolume = newCurrentVolume;
@@ -28,41 +29,42 @@ public class Radio {
         if (currentVolume < 10) {
             currentVolume += 1;
         }
-        if (currentVolume >= 10){
+        if (currentVolume >= 10) {
             setCurrentVolume(10);
         }
 
 
     }
-    public void decreaseCurrentVolume(){
+
+    public void decreaseCurrentVolume() {
 //        if (currentVolume == 0){
 //            return;
 //        }
-        if (currentVolume > 0){
+        if (currentVolume > 0) {
             currentVolume -= 1;
         }
-        if (currentVolume <= 0){
+        if (currentVolume <= 0) {
             setCurrentVolume(0);
         }
 
     }
 
-    public void setCurrentStation(int newCurrentStation){
-        if (newCurrentStation < 1){
+    public void setCurrentStation(int newCurrentStation) {
+        if (newCurrentStation < 1) {
             return;
         }
-        if (newCurrentStation > 9){
+        if (newCurrentStation > 9) {
             return;
         }
         currentStation = newCurrentStation;
     }
 
-    public void nextStation(){
+    public void nextStation() {
 
-        if (currentStation < 9){
+        if (currentStation < 9) {
             currentStation += 1;
         }
-        if (currentStation == 9){
+        if (currentStation == 9) {
             setCurrentStation(1);
         }
 //        if (currentStation > 9){
@@ -70,12 +72,12 @@ public class Radio {
 //        }
     }
 
-    public void prevStation(){
+    public void prevStation() {
 
-        if (currentStation > 1){
+        if (currentStation > 1) {
             currentStation -= 1;
         }
-        if (currentStation == 1){
+        if (currentStation == 1) {
             setCurrentStation(9);
         }
 //        if (currentStation < 1){

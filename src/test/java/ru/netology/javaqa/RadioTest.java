@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class RadioTest {
 
     @Test
-    public void shouldNotSetVolumeOverMax(){
+    public void shouldNotSetVolumeOverMax() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(11);
@@ -18,7 +18,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldNotSetVolumeUnderMin(){
+    public void shouldNotSetVolumeUnderMin() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(-1);
@@ -30,7 +30,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldIncreaseVolume(){
+    public void shouldIncreaseVolume() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(5);
@@ -43,7 +43,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldIncreaseVolumeOverMax(){
+    public void shouldIncreaseVolumeOverMax() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(10);
@@ -56,7 +56,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldDecreaseVolumeUnderMin(){
+    public void shouldDecreaseVolumeUnderMin() {
 
         Radio radio = new Radio();
 
@@ -70,7 +70,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldDecreaseVolume(){
+    public void shouldDecreaseVolume() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(10);
@@ -83,7 +83,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldNotSetStationOverMax(){
+    public void shouldNotSetStationOverMax() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(11);
@@ -95,7 +95,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldNotSetStationUnderMin(){
+    public void shouldNotSetStationUnderMin() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(-1);
@@ -107,7 +107,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldChangeToNextStation(){
+    public void shouldChangeToNextStation() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(6);
@@ -120,7 +120,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldChangeToPrevStation(){
+    public void shouldChangeToPrevStation() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(5);
@@ -133,7 +133,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldChangeToNextStationOverMax(){
+    public void shouldChangeToNextStationOverMax() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(9);
@@ -146,7 +146,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldChangeToPrevStationUnderMin(){
+    public void shouldChangeToPrevStationUnderMin() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(1);
