@@ -159,7 +159,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldShowNumOfMaxStations(){
+    public void shouldShowNumOfMaxStations() {
         Radio radio = new Radio(15);
 
         int expected = 14;
