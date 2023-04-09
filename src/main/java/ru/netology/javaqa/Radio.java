@@ -44,7 +44,7 @@ public class Radio {
     }
 
     public void setCurrentStation(int newCurrentStation) {
-        if (newCurrentStation < 1) {
+        if (newCurrentStation < 0) {
             return;
         }
         if (newCurrentStation > 9) {
@@ -62,7 +62,7 @@ public class Radio {
 
     public void prevStation() {
         currentStation -= 1;
-        if (currentStation < 1) {
+        if (currentStation < 0) {
             setCurrentStation(9);
         }
     }
