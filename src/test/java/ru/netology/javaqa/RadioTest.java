@@ -4,13 +4,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class RadioTest {
-//    @Test
-//    public void Test(){
-//        Radio radio = new Radio(15);
-//
-//        Assertions.assertEquals(14, radio.getNumOfMaxStations());
-//    }
-
     @Test
     public void shouldNotSetVolumeOverMax() {
         Radio radio = new Radio();
@@ -124,8 +117,8 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
-    
-//
+
+
     @Test
     public void shouldChangeToPrevStation() {
         Radio radio = new Radio(15);
